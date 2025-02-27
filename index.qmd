@@ -1,0 +1,30 @@
+---
+title: "Office hours for Stephen Eglen"
+date: last-modified
+date-format: "YYYY-MM-DD HH:mm"
+format:
+  html:
+    embed-resources: false
+---
+
+# Booking page
+
+Please email with me with the times that you can make; I will then
+find a convenient slot.  By default, I can send a Zoom link, but if
+you are in Cambridge let me know if you would like to meet in the Math
+dept.
+
+
+```{r,echo=FALSE}
+library(knitr)
+dat <- readLines("/tmp/officehrs.dat")
+df <- data.frame(Time=dat)
+kable(df)
+```
+
+## See Makefile for generating officehrs.dat
+
+
+
+
+
