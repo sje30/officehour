@@ -7,7 +7,7 @@ format:
     embed-resources: false
 ---
 
-# Booking page
+## Booking page
 
 Please email with me with the times that you can make; I will then
 find a convenient slot.  By default, I can send a Zoom link, but if
@@ -22,7 +22,8 @@ df <- data.frame(Time=dat)
 kable(df)
 ```
 
-## See Makefile for generating officehrs.dat
+
+
 
 
 
