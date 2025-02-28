@@ -23,7 +23,12 @@ kable(df)
 ```
 
 
+<!-- 
 
+Would be nice to automate this somehow so if the org file is changed, 
+then the html is automatically updated.
+
+-->
 
 
 
