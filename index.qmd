@@ -7,17 +7,29 @@ format:
     embed-resources: false
 ---
 
-## Booking page
-
 Please email with me with the times that you can make; I will then
 find a convenient slot.  By default, I can send a Zoom link, but if
 you are in Cambridge let me know if you would like to meet in the Math
 dept.
 
 
-```{r,echo=FALSE}
+
+```{r,include=FALSE}
 library(knitr)
+library(lubridate)
+```
+
+
+```{r,echo=FALSE}
+upcoming_dates <- function(dates) {
+  dat <- substring(dates, 2, 11)
+  dat >= today() 
+}
+```
+
+```{r,echo=FALSE}
 dat <- readLines("/tmp/officehrs.dat")
+dat <- dat[upcoming_dates(dat)]
 df <- data.frame(Time=dat)
 kable(df)
 ```
